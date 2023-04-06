@@ -1,0 +1,153 @@
+body {
+    background-image: url("https://www.esriuk.com/content/dam/distributor-restricted/esriuk-com/maps-we-love/mapping-a-fuel-crisis/banner-fuel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    margin: 0
+}
+
+aside {
+    background-color: rgb(70, 67, 67, .7);
+    width: 10vw;
+    height: 100vh;
+}
+
+/* containers */
+.main-page-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh
+}
+
+.header-nav-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255, .7);
+    width: 90vw;
+    height: 7vh;
+}
+
+.tool-bar-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(70, 67, 67, .7);
+    width: 90vw;
+    height: 23vh
+}
+
+.main-chart-container {
+    width: 90vw;
+    height: 70vh
+}
+
+.job-description {
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid black;
+}
+
+
+/* Header icons */
+.menu-icon, .add-friend-icon,
+.calendar-icon, .bento-icon {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 7vh;
+    width: 5vw;
+}
+
+.search-icon {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 7vh;
+    width: 70vw;
+}
+.search-icon input {
+    margin-bottom: -1em;
+    height: 7vh;
+    width: 70vw;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+/* Text */
+h1 {
+    margin: 0;
+    font-size: x-large;
+    color: white;
+}
+
+span {
+    font-size: small;
+}
+
+p {
+   color: white;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.nav {
+    word-spacing: 20px ;
+}
+
+.duration-difficulty {
+    word-spacing: 30px;
+}
+
+.time {
+    word-spacing: 40px;
+}
+
+
+
+/* Icons/Images */
+.bookmark-icon {
+    border: 1px solid black;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/102/102279.png);
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+}
+
+.pencil-icon {
+    border: 1px solid black;
+    background-image: url(https://t4.ftcdn.net/jpg/00/97/00/03/240_F_97000339_izOxGvwNx3PRo5N61LqlvO9kg3Y1ftRE.jpg);
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* 
+img {
+    height: 25px;
+    width: 25px;
+  } */
+
+  /* .arrow-left {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+} */
+
+/* lines */
+/* hr {
+    border: none;
+    border-top: 1px solid black;
+    position: relative;
+  } */
+
