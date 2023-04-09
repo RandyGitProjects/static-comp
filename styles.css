@@ -20,31 +20,6 @@ aside, .categories-nav-container {
     height: 100vh;
 }
 
-/* containers */
-/* .aside-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-} */
-
-/* .categories-nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.main-nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.admin-nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
-
 .main-page-container {
     display: flex;
     justify-content: flex-start;
@@ -83,7 +58,6 @@ aside, .categories-nav-container {
     border: 2px solid black;
 }
 
-
 /* Header nav icons */
 .menu-icon, .friend-icon,
 .calendar-icon, .bento-icon {
@@ -103,6 +77,7 @@ aside, .categories-nav-container {
     height: 7vh;
     width: 70vw;
 }
+
 .search-icon input {
     margin-bottom: -1em;
     height: 7vh;
@@ -112,7 +87,6 @@ aside, .categories-nav-container {
 }
 
 /* Text */
-
 .name {
     margin-left: 50px;
 }
@@ -196,7 +170,7 @@ p {
     margin-top: 10px;
 }
 
-.icon {
+.box-icon {
     height: 25px;
     width: 25px;
     margin-left: 10px;
@@ -220,14 +194,7 @@ p {
 }
 
 .home-icon, .jobs-icon, .resumes-icon,
-.tasks-icon, .calendar-aside-icon {
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    filter: invert(1);
-}
-
+.tasks-icon, .calendar-aside-icon,
 .user-icon, .location-icon, .workflow-icon,
 .job-icon, .social-icon {
     height: 25px;
@@ -237,41 +204,29 @@ p {
     filter: invert(1);
 }
 
-
-
 /* Tool bar icons */
-.bookmark-icon {
+.tool-icon {
     border: 2px solid orange;
     background-color: white;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/786/786251.png);
     padding: 5px;
     height: 20px;
     width: 20px;
-    overflow: hidden;
     position: absolute;
+}
+
+.bookmark-icon {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/786/786251.png);
     right: 130px;
 }
 
 .pencil-icon {
-    border: 2px solid orange;
-    background-color: white;
     background-image: url(https://cdn-icons-png.flaticon.com/512/650/650143.png);
-    padding: 5px;
-    height: 20px;
-    width: 20px;
     right: 85px;
-    position: absolute;
 }
 
 .delete-icon {
-    border: 2px solid orange;
-    background-color: white;
     background-image: url(https://cdn-icons-png.flaticon.com/512/1214/1214428.png);
-    padding: 5px;
-    height: 20px;
-    width: 20px;
     right: 40px;
-    position: absolute;
 }
 
 .menu-icon-img, .add-friend-icon,
@@ -282,7 +237,6 @@ p {
 
 .timer-icon {
     filter: invert(1);
-    border-radius: 50%;
     height: 25px;
     width: 25px;
 }
