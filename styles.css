@@ -1,3 +1,7 @@
+html {
+    background-color: rgba(2, 0, 1);
+}
+
 body {
     background-image: url("https://www.esriuk.com/content/dam/distributor-restricted/esriuk-com/maps-we-love/mapping-a-fuel-crisis/banner-fuel.jpg");
     background-size: cover;
@@ -10,13 +14,37 @@ body {
     margin: 0
 }
 
-aside {
-    background-color: rgb(70, 67, 67, .7);
+aside, .categories-nav-container {
+    background-color: rgba(48, 45, 45, 0.9);
     width: 10vw;
     height: 100vh;
 }
 
 /* containers */
+/* .aside-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+} */
+
+/* .categories-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.admin-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
 .main-page-container {
     display: flex;
     justify-content: flex-start;
@@ -29,7 +57,7 @@ aside {
     display: flex;
     align-items: flex-start;
     background-color: rgb(255, 255, 255, .7);
-    width: 89vw;
+    width: 90vw;
     height: 7vh;
 }
 
@@ -38,15 +66,15 @@ aside {
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(70, 67, 67, .7);
-    width: 89vw;
-    height: 30vh;
+    background-color: rgba(48, 45, 45, 0.9);
+    width: 90vw;
+    height: 25vh;
     position: relative;
 }
 
 .main-chart-container {
     width: 90vw;
-    height: 63vh
+    height: 68vh
 }
 
 .job-description {
@@ -56,7 +84,7 @@ aside {
 }
 
 
-/* Header icons */
+/* Header nav icons */
 .menu-icon, .friend-icon,
 .calendar-icon, .bento-icon {
     display: flex;
@@ -84,6 +112,11 @@ aside {
 }
 
 /* Text */
+
+.name {
+    margin-left: 50px;
+}
+
 h1 {
     margin: 0;
     font-size: x-large;
@@ -103,17 +136,23 @@ p {
 }
 
 .nav {
-    margin-right: 35px;
+    font-size: medium;
+    margin-right: 70px;
     padding: 6px;
     position: relative;
 }
 
 .duration-difficulty {
-    word-spacing: 30px;
+    word-spacing: 60px;
 }
 
 .time {
     word-spacing: 40px;
+}
+
+.link-to-favorites {
+    font-size: small;
+    color: orange;
 }
 
 /* UX */
@@ -122,42 +161,133 @@ p {
     padding: 5px;
     background-color: rgb(0, 0, 0);
     color: white;
+    cursor: pointer;
   }
 
+.arrow-left:hover {
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.menu-icon:hover, .friend-icon:hover,
+.calendar-icon:hover, .bento-icon:hover {
+    cursor: pointer;
+    background-color: #94e4fd;
+}
 
-/* Icons/Images */
+.bookmark-icon:hover, .pencil-icon:hover, 
+.delete-icon:hover {
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: orange;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.link-to-favorites:hover {
+    color: #94e4fd;
+}
+
+/* Aside icons */
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.yellow-icon {
+    background-color: yellow;
+}
+
+.blue-icon {
+    background-color: blue;
+}
+
+.red-icon {
+    background-color: red;
+}
+
+.green-icon {
+    background-color: green;
+}
+
+.home-icon, .jobs-icon, .resumes-icon,
+.tasks-icon, .calendar-aside-icon {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.user-icon, .location-icon, .workflow-icon,
+.job-icon, .social-icon {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+
+
+/* Tool bar icons */
 .bookmark-icon {
-    border: 1px solid black;
+    border: 2px solid orange;
     background-color: white;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/102/102279.png);
-    border-radius: 50%;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/786/786251.png);
     padding: 5px;
     height: 20px;
     width: 20px;
     overflow: hidden;
     position: absolute;
-    right: 120px;
+    right: 130px;
 }
 
 .pencil-icon {
-    border: 1px solid black;
-    background-image: url(https://t4.ftcdn.net/jpg/00/97/00/03/240_F_97000339_izOxGvwNx3PRo5N61LqlvO9kg3Y1ftRE.jpg);
-    border-radius: 50%;
+    border: 2px solid orange;
+    background-color: white;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/650/650143.png);
     padding: 5px;
     height: 20px;
     width: 20px;
-    right: 80px;
+    right: 85px;
+    position: absolute;
+}
+
+.delete-icon {
+    border: 2px solid orange;
+    background-color: white;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1214/1214428.png);
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    right: 40px;
     position: absolute;
 }
 
 .menu-icon-img, .add-friend-icon,
- .nav-calendar-icon, .bento-menu-icon {
+.nav-calendar-icon, .bento-menu-icon {
     height: 25px;
-    width: 25px;
+    width: 25px;    
   }
 
+.timer-icon {
+    filter: invert(1);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
   .arrow-left {
-    border: solid black;
+    border: .5px solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
