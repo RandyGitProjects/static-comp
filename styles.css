@@ -291,3 +291,10 @@ p {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+.main-img {
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 80vw;
+    height: 70vh;
+}
